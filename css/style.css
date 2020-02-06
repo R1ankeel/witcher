@@ -57,7 +57,7 @@ li {
   text-decoration: none;
 }
 .header-container__link:hover {
-  color: #3A383C;
+  color: #ffffff;
 }
 .header-container__social-link {
   margin-right: 20px;
@@ -272,7 +272,7 @@ li {
 }
 .policy__item a,
 .policy__text {
-  color: #3A383C;
+  color: #ffffff;
   text-decoration: none;
 }
 @media (max-width: 768px) {
