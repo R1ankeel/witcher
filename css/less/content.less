@@ -49,6 +49,16 @@
   line-height: 16px;
   color: @text-white;
   margin-bottom: 85px;
+
+
+  &:hover {
+    background-color: darken(@button-color, 10%);
+    transition: linear .2s;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
 }
 
 .main-content__play {

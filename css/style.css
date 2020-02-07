@@ -109,6 +109,13 @@ li {
   color: #FFFFFF;
   margin-bottom: 85px;
 }
+.content-container__button-watch:hover {
+  background-color: #751e1e;
+  transition: linear 0.2s;
+}
+.content-container__button-watch:active {
+  transform: scale(0.95);
+}
 .main-content__play {
   width: 100px;
   height: 100px;

@@ -10,6 +10,8 @@
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css" />
     <title>The Witcher</title>
   </head>
@@ -49,7 +51,7 @@
     </header>
 
     <main>
-      <article class="content-container">
+      <article class="content-container animated fadeIn">
         <div class="content-container__wrapper">
           <div class="content-container__main-content">
             <p class="content-container__genre">2019, фэнтези</p>
@@ -122,12 +124,21 @@
               нечисти — хоть от чудищ болотных, оборотней и даже заколдованных
               принцесс.
             </p>
-            <button class="content-container__button-watch" type="button">
-              Смотреть онлайн
+            <button
+              data-fancybox
+              href="https://www.youtube.com/watch?v=mlO1YaqXLqw"
+              class="content-container__button-watch"
+              type="button"
+            >
+              Смотреть трейлер
             </button>
           </div>
           <!-- /.content-container__main-content -->
-          <button class="main-content__play">
+          <button
+            data-fancybox
+            href="https://www.youtube.com/watch?v=EUizTA1nrfA"
+            class="main-content__play"
+          >
             <img
               src="img/play.svg"
               alt="воспроизвести"
@@ -140,7 +151,7 @@
         <!-- /.content-container__wrapper -->
       </article>
 
-      <div class="series-wrapper">
+      <div class="series-wrapper animated fadeIn delay-2s">
         <section class="series">
           <!-- slider start -->
 
@@ -149,28 +160,35 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <div class="series__card serie-1">
+                <div
+                  data-fancybox
+                  href="https://www.youtube.com/watch?v=EUizTA1nrfA"
+                  class="series__card serie-1"
+                >
                   <p class="series__card-subtitle">Серия #1</p>
                   <h2 class="series__card-title">Начало конца</h2>
                 </div>
               </div>
               <!-- slide 1 end -->
               <div class="swiper-slide">
-                <div class="series__card serie-2">
+                <div data-fancybox
+                href="https://www.youtube.com/watch?v=EUizTA1nrfA" class="series__card serie-2">
                   <p class="series__card-subtitle">Серия #2</p>
                   <h2 class="series__card-title">Четыре знака</h2>
-                </div>
+                </div                  href="https://www.youtube.com/watch?v=EUizTA1nrfA">
               </div>
               <!-- slide 2 end -->
               <div class="swiper-slide">
-                <div class="series__card serie-3">
+                <div data-fancybox
+                href="https://www.youtube.com/watch?v=EUizTA1nrfA" class="series__card serie-3">
                   <p class="series__card-subtitle">Серия #3</p>
                   <h2 class="series__card-title">Предательская луна</h2>
                 </div>
               </div>
               <!-- slide 3 end -->
               <div class="swiper-slide">
-                <div class="series__card serie-4">
+                <div data-fancybox
+                href="https://www.youtube.com/watch?v=EUizTA1nrfA" class="series__card serie-4">
                   <p class="series__card-subtitle">Серия #4</p>
                   <h2 class="series__card-title">
                     Банкеты, ублюдки и похороны
@@ -179,27 +197,31 @@
               </div>
               <!-- slide 4 end -->
               <div class="swiper-slide">
-                <div class="series__card serie-5">
+                <div data-fancybox
+                href="https://www.youtube.com/watch?v=EUizTA1nrfA" class="series__card serie-5">
                   <p class="series__card-subtitle">Серия #5</p>
                   <h2 class="series__card-title">Сдерживаемые аппетиты</h2>
                 </div>
               </div>
               <!-- slide 5 end -->
               <div class="swiper-slide">
-                <div class="series__card serie-6">
+                <div data-fancybox
+                href="https://www.youtube.com/watch?v=EUizTA1nrfA" class="series__card serie-6">
                   <p class="series__card-subtitle">Серия #6</p>
                   <h2 class="series__card-title">Редкие виды</h2>
                 </div>
               </div>
               <!-- slide 6 end -->
               <div class="swiper-slide">
-                <div class="series__card serie-7">
+                <div data-fancybox
+                href="https://www.youtube.com/watch?v=EUizTA1nrfA" class="series__card serie-7">
                   <p class="series__card-subtitle">Серия #7</p>
                   <h2 class="series__card-title">Перед падением</h2>
                 </div>
               </div>
               <!-- slide 7 end -->
-              <div class="swiper-slide">
+              <div data-fancybox
+              href="https://www.youtube.com/watch?v=EUizTA1nrfA" class="swiper-slide">
                 <div class="series__card serie-8">
                   <p class="series__card-subtitle">Серия #8</p>
                   <h2 class="series__card-title">Нечто большее</h2>
@@ -231,7 +253,9 @@
         </ul>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
